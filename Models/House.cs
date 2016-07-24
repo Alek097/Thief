@@ -8,10 +8,11 @@
 	{
 		public Guid Id { get; set; }
 		public int ModelType { get; set; }
+		public int Level { get; set; }
 		public virtual ICollection<NPC> People { get; set; }
-		//Kingdom
-		public Coordinates Coordinates { get; set; }
-		public Coordinates Rotation { get; set; }
+		public virtual Kingdom Kingdom { get; set; }
+		public virtual Coordinates Coordinates { get; set; }
+		public virtual Coordinates Rotation { get; set; }
 
 		public House()
 		{

@@ -46,12 +46,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Audience.cs" />
     <Compile Include="Coordinates.cs" />
     <Compile Include="House.cs" />
-    <Compile Include="Job.cs" />
+    <Compile Include="Kingdom.cs" />
+    <Compile Include="Resource.cs" />
+    <Compile Include="Road.cs" />
+    <Compile Include="Shelter.cs" />
+    <Compile Include="Types\AudienceType.cs" />
+    <Compile Include="Types\Job.cs" />
     <Compile Include="King.cs" />
     <Compile Include="NPC.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Types\ResourceType.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

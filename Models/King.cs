@@ -10,6 +10,8 @@
 		public string FirstName { get; set; }
 		public string SecondName { get; set; }
 		public virtual ICollection<NPC> Slaves { get; set; }
+		public virtual ICollection<Audience> Audiences { get; set; }
+		public virtual Kingdom Kingdom { get; set; }
 		public King()
 		{
 			this.Id = Guid.NewGuid();

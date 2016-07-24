@@ -1,4 +1,4 @@
-﻿namespace Models
+﻿namespace Models.Types
 {
 	public enum Job
 	{
@@ -17,6 +17,10 @@
 		/// <summary>
 		/// Охотник
 		/// </summary>
-		Hunter
+		Hunter,
+		/// <summary>
+		/// Фермер
+		/// </summary>
+		Farmer
 	}
 }

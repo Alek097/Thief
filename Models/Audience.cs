@@ -4,15 +4,14 @@
 	using System;
 	using Types;
 	#endregion
-	public class NPC
+	public class Audience
 	{
 		public Guid Id { get; set; }
-		public string Name { get; set; }
-		public Job Job { get; set; }
+		public AudienceType AudienceType { get; set; }
+		public virtual NPC Slave { get; set; }
 		public virtual King King { get; set; }
-		public virtual House House { get; set; }
 
-		public NPC()
+		public Audience()
 		{
 			this.Id = Guid.NewGuid();
 		}
